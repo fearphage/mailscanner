@@ -23,6 +23,8 @@ setup(
     install_requires=[
         'connexion',
         'docopt',
+        'h5py',
+        'keras',
         'smart_open',
         'tqdm',
         'vectoria',

@@ -10,7 +10,6 @@ model.
 '''
 
 import docopt
-None
 import mailscanner
 import keras
 import pickle
@@ -22,9 +21,9 @@ if __name__ == '__main__':
     targets = replies.one_hot_labels
     sources = replies.texts
     model = mailscanner.models.Ensemble(replies)
-    
+
     print(model.summary())
-    #saved encoder
+    # saved encoder
     replies.save(arguments['<output_model_codec>'])
 
     # run with callback to save the best performing weights
