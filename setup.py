@@ -21,11 +21,11 @@ setup(
     packages=find_packages(),
     scripts=['bin/download-gmail', 'bin/prepare-replies-dataset', 'bin/prepare-replies-model'],
     install_requires=[
-        'tqdm',
+        'connexion',
         'docopt',
-        'vectoria',
         'smart_open',
-        'connexion'
+        'tqdm',
+        'vectoria',
     ],
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
